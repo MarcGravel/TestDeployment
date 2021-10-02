@@ -6,11 +6,11 @@ import sys
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/api')
 def handler():
     return "Hello World"
 
-@app.route('/fruits', methods=['GET', 'POST', 'PATCH'])
+@app.route('/api/fruits', methods=['GET', 'POST', 'PATCH'])
 def fruits_handler():
     fruit_name = "Banana"
 
